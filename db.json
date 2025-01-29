@@ -1,0 +1,100 @@
+{
+    "contact": [
+      {
+        "name": "Merve Ucar",
+        "positon": "Frontend Developer",
+        "company": "Udemig",
+        "phone": "+90 555 678 77 75",
+        "email": "merveucar@gmail.com",
+        "id": "skdkd2"
+      },
+      {
+        "name": "Ece Yılmaz",
+        "positon": "Backend Developer",
+        "company": "Emaartech",
+        "phone": "+90 533 444 88 88",
+        "email": "eceyilmaz@gmail.com",
+        "id": "abc123"
+      },
+      {
+        "name": "Ali Kaya",
+        "positon": "Full Stack Developer",
+        "company": "TechCorp",
+        "phone": "+90 541 222 33 33",
+        "email": "alikaya@techcorp.com",
+        "id": "xyz456"
+      },
+      {
+        "name": "Zeynep Demir",
+        "positon": "UI/UX Designer",
+        "company": "Designify",
+        "phone": "+90 555 888 99 00",
+        "email": "zeynepdemir@designify.com",
+        "id": "mnq789"
+      },
+      {
+        "name": "Mert Akın",
+        "positon": "DevOps Engineer",
+        "company": "Cloudify",
+        "phone": "+90 530 123 45 67",
+        "email": "mertakin@cloudify.com",
+        "id": "dev001"
+      },
+      {
+        "name": "Aslı Kuzucu",
+        "positon": "Data Scientist",
+        "company": "DataWorks",
+        "phone": "+90 555 987 65 43",
+        "email": "aslikuzucu@dataworks.com",
+        "id": "data002"
+      },
+      {
+        "name": "Burak Özkan",
+        "positon": "Machine Learning Engineer",
+        "company": "AIHub",
+        "phone": "+90 532 654 32 10",
+        "email": "burakozkan@aihub.com",
+        "id": "ml003"
+      },
+      {
+        "name": "Elif Şahin",
+        "positon": "Mobile Developer",
+        "company": "Appify",
+        "phone": "+90 534 876 54 32",
+        "email": "elifsahin@appify.com",
+        "id": "mob004"
+      },
+      {
+        "name": "Can Çelik",
+        "positon": "Cybersecurity Specialist",
+        "company": "SecureNet",
+        "phone": "+90 555 432 10 98",
+        "email": "cancelik@securenet.com",
+        "id": "cyber005"
+      },
+      {
+        "name": "Cihan Hayta",
+        "positon": "Frontend Developer",
+        "company": "Udemig",
+        "phone": "5556667898",
+        "email": "cihan@gmail.com",
+        "id": "lRf0-9f"
+      },
+      {
+        "name": "Can Karaosmanoğlu",
+        "positon": "React Developer",
+        "company": "Emaartech",
+        "phone": "5556667898",
+        "email": "can@gmail.com",
+        "id": "E7gUP_6"
+      },
+      {
+        "name": "Mansur Yılmaz",
+        "positon": "React Developer",
+        "company": "Udemig",
+        "phone": "55566678467",
+        "email": "mansur@gmail.com",
+        "id": "uDOxf29"
+      }
+    ]
+  }
