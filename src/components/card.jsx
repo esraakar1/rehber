@@ -3,19 +3,19 @@ import { AiFillEdit } from "react-icons/ai";
 import { FaPhone } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
-const Card = ({contact}) => {
-    const [name, surname] = contact.name.split(" ");
+const Card = ({contact, handleDelete, handleEdit}) => {
+    
     return (
         <div className="card">
             <div className="buttons">
-                <button><MdDeleteForever />
+                <button onClick={() => handleDelete(contact.id)}><MdDeleteForever />
                 </button>
-                <button><AiFillEdit /></button>
+                <button onClick={() => handleEdit(contact)}><AiFillEdit /></button>
             </div>
 
             <div>
                 {/* kişi profili  */}
-                <h1> {name[0]} {surname[0]}</h1>
+                <h1>{contact.name[0]}</h1>
                 {/* name  */}
                 <h3>{contact.name}</h3>
                 {/* position  */}

@@ -15,6 +15,7 @@ function App() {
 // bileşen içerisinde verileri yönetmek için state tanımla 
   const [contacts, setContacts] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editItem, setEditItem] = useState(null);
 // sayfa yüklendiğinde api dan verileri al 
   useEffect(() => {
     axios.get("/contact")
@@ -31,13 +32,39 @@ function App() {
     q: text,
   };
 
-  axios.get(" /contact", {params})
+  axios.get("/contact", {params})
   .then((res) => setContacts(res.data));
 
   };
 
+  // sil butonuna tıklanınca ilgili kişi silen fonksiyon 
+  const handleDelete = (id) => {
+   const res = confirm("kişiyi silmek istediğinizden emin misiniz?");
+   
+    if (res) {
+      // api dan id si bilinen kullanıcıyı silsin 
+      axios.delete(`/contact/${id}`).then(() => {
+        // silinen kişiyi state den kaldır 
+        const updated = contacts.filter((contact) => contact.id !== id);
+        setContacts(updated); 
+      })
+      .catch((err) => {
+        alert("silme işlemi sırasında bir hata oluştu!!");
+        alert(err);
+      });
+    }
+  }; 
 
-  console.log(contacts);
+  // ! güncelle ikonuna tıklayınca ilgili kişin verisini güncelleyecek fonksiyon 
+
+  const handleEdit = (contact) => {
+    // modal ı aç
+     setIsModalOpen(true);
+
+    //  güncellenecek kişiyi state e aktar 
+    setEditItem(contact);
+  };
+
   return (
     <div className='app'>
       {/* /* {header} */ }
@@ -61,14 +88,19 @@ function App() {
 
     {/* main  */}
     <main>
-    {contacts.map((contact) => (
-      <Card key={contact.id} contact = {contact}/>
+    {contacts.map((contact, i) => (
+      <Card key={i} 
+      contact = {contact} 
+      handleDelete = {handleDelete} 
+      handleEdit={handleEdit}/>
     ))}
     </main>
     {/* modal  */}
     <Modal isModalOpen={isModalOpen} 
     setIsModalOpen={setIsModalOpen} 
     setContacts={setContacts}
+    editItem={editItem}
+    setEditItem={setEditItem}
     />
   </div>
   );

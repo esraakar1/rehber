@@ -1,19 +1,11 @@
 {
   "contact": [
     {
-      "name": "Merve Ucar",
-      "positon": "Frontend Developer",
-      "company": "Udemig",
-      "phone": "+90 555 678 77 75",
-      "email": "merveucar@gmail.com",
-      "id": "skdkd2"
-    },
-    {
-      "name": "Ece Yılmaz",
+      "name": "Ecem yılmaz",
       "positon": "Backend Developer",
       "company": "Emaartech",
-      "phone": "+90 533 444 88 88",
-      "email": "eceyilmaz@gmail.com",
+      "phone": "+90 533 444 88 80",
+      "email": "ecey@gmail.com",
       "id": "abc123"
     },
     {
@@ -97,17 +89,28 @@
       "id": "uDOxf29"
     },
     {
-      "id": "3",
-      "title": "yazılım öğren",
-      "viens": "3000"
-    },
-    {
-      "name": "esra",
-      "positon": "akar",
+      "name": "Eslem akar",
+      "positon": "frontend developer",
       "company": "udemig",
       "phone": "973286480216",
-      "email": "esraess886@gmail.com",
-      "id": "rrGzYUC"
+      "email": "eslem@gmail.com",
+      "id": "4qPGhXg"
+    },
+    {
+      "name": "Esra Akar",
+      "positon": "full stack developer",
+      "company": "apple",
+      "phone": "973286480216",
+      "email": "esra@gmail.com",
+      "id": "FoLxc_U"
+    },
+    {
+      "name": "tayo can",
+      "positon": "Backend Developer",
+      "company": "udemig",
+      "phone": "+90 533 444 88 88",
+      "email": "123@gmail.com",
+      "id": "7EnGTR2"
     }
   ]
 }
